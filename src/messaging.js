@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-///import './App.css';
+import { v4 } from 'uuid'
 import Bar from "./header.js"
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
@@ -82,7 +82,7 @@ document.body.style.backgroundColor = "#f2f2f2";
                     <ListItemText primary="Messages" />
                 </ListItem>
                 <Divider/>
-                    {loadedMessages.map((v,i)=><MessageNames key={i} myKey={i} namesObj={v} runFunc={this.manageIndex}/>)}
+                    {loadedMessages.map((v,i)=><MessageNames key={v4()} myKey={i} namesObj={v} runFunc={this.manageIndex}/>)}
                 
               </List>
 
@@ -92,7 +92,7 @@ document.body.style.backgroundColor = "#f2f2f2";
             <Grid item md={8} xs={8} sm={8}>
 
               <div style={{overflowY: "auto",height:520,}}>
-                {loadedMessages[currentIndex].messages.map((v,i)=><MessagePaper key={i} display={v}/>) }
+                {loadedMessages[currentIndex].messages.map((v,i)=><MessagePaper key={v4()} display={v}/>) }
               </div>
               
               <TextField
