@@ -49,7 +49,7 @@ document.body.style.backgroundColor = "#f2f2f2";
         
           <Provider store = {store}>
           <div> {/* AlWAYS WRAP COMPONENT INSIDE PROVIDER WITH DIV*/}
-             {(!mainpageReady&&!messageReady) ? <NewLogin ready={this.handleChange}/> : null}//
+             {(!mainpageReady&&!messageReady) ? <NewLogin ready={this.handleChange}/> : null}
              {(mainpageReady&&!messageReady) ? <NewMainpage ready={this.handleMessageChange} logout={this.handleLogout}/> : null} 
             {messageReady ? <NewMessage ready={this.handleHomepage} logout={this.handleLogout}/> : null}
           </div>
