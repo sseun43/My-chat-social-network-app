@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-///import './App.css';
 import Login from "./login.js"
 import Messages from "./messaging.js"
 import Mainpage from "./mainpage.js";
-//import Daapp from "./da_app.js"
 import { Provider } from 'react-redux'
 import {store} from "./daStore.js"
 import {NewLogin,NewMainpage, NewMessage} from "./dispatcher.js"
-console.log(store.getState())
+
 
 
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-///import './App.css';
 import Bar from "./header.js"
 import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';

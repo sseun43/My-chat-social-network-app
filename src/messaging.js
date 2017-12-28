@@ -18,7 +18,7 @@ const connectOpt ={
 const  socket = openSocket.connect("https://social-network-api.herokuapp.com",connectOpt);//
 
 
-class Messages extends Component {
+class Messages extends Component { 
   constructor(props){
     super(props)
     this.state={
@@ -52,6 +52,7 @@ handleMessageSend(ev){
     ev.preventDefault(); 
     sendMessageMethod(theMessage, loadedMessages[currentIndex].participants[0]._id, loadedMessages[currentIndex]._id);
     ev.target.value=""
+    console.log(loadedMessages[currentIndex]._id)
   }
 }
 
@@ -124,7 +125,7 @@ document.body.style.backgroundColor = "#f2f2f2";
               
       </div>
     );
-  }
+  }  
 }
 
 export default Messages;
