@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-///import './App.css';
+import List, { ListItem } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
 
@@ -23,12 +23,10 @@ document.body.style.backgroundColor = "#f2f2f2";
       
           {/*<Mainpage/>*/}
           <ListItem>
-          <Chip
-                    avatar={
-                      <Avatar src="https://source.unsplash.com/random"/>
-                    }
-                    label={this.props.label.name||this.props.label}
-                    />
+            <Chip 
+              avatar={<Avatar src="https://source.unsplash.com/random"/>}
+              label={this.props.label.name||this.props.label}
+            />
           </ListItem>
 
 

@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-///import './App.css';
-
 import Bar from "./header.js"
 import Grid from 'material-ui/Grid';
 import TextField from 'material-ui/TextField';
 import Button from 'material-ui/Button';
-
 import List, { ListItem } from 'material-ui/List';
-
 import PostPaper from "./postpaper.js";
 import FriendRequestChip from "./friendrequestchip.js"
 import FriendChip from "./friendchip.js"

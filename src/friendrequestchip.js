@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-///import './App.css';
+import List, { ListItem } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
 
@@ -32,15 +32,12 @@ const {label} = this.props
       
           {/*<Mainpage/>*/}
           <ListItem>
-          <Chip
-                    avatar={
-                      <Avatar src="https://source.unsplash.com/random"/>
-                    }
-                    label={label.name}
-                    onClick={()=>{this.handleClick(label.id,label.name)}}
-                    onRequestDelete={()=>{this.handleRequestDelete(label.id,label.name)}}
-                    
-                  />
+           <Chip
+              avatar={<Avatar src="https://source.unsplash.com/random"/>}
+              label={label.name}
+              onClick={()=>{this.handleClick(label.id,label.name)}}
+              onRequestDelete={()=>{this.handleRequestDelete(label.id,label.name)}}
+             />
           </ListItem>
 
               
