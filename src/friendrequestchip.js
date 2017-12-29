@@ -31,6 +31,7 @@ const {label} = this.props
       <div>
       
           {/*<Mainpage/>*/}
+          <ListItem>
           <Chip
                     avatar={
                       <Avatar src="https://source.unsplash.com/random"/>
@@ -40,7 +41,7 @@ const {label} = this.props
                     onRequestDelete={()=>{this.handleRequestDelete(label.id,label.name)}}
                     
                   />
-
+          </ListItem>
 
               
       </div>

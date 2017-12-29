@@ -108,10 +108,10 @@ document.body.style.backgroundColor = "#f2f2f2";
 
                 <List style={{backgroundColor:"white",overflowY: "auto",height:100}}>
             
-                  <ListItem>
+                
                    {friendList.map((v,i)=> <FriendChip key={i} label ={v}/>)}
 
-                  </ListItem>
+                  
                 
               </List>
 
@@ -124,7 +124,7 @@ document.body.style.backgroundColor = "#f2f2f2";
            
               <List style={{backgroundColor:"white",overflowY: "auto",height:100}}>
           
-                    <ListItem>
+                    
                       {friendRequest.map((v,i)=><FriendRequestChip 
                                                   key={i} 
                                                   label ={v} 
@@ -132,7 +132,7 @@ document.body.style.backgroundColor = "#f2f2f2";
                                                   reject={rejectFriendRequestMethod}
                                                   />)}
                     
-                    </ListItem>
+                    
               </List>
            
           </Grid>

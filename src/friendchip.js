@@ -22,12 +22,14 @@ document.body.style.backgroundColor = "#f2f2f2";
       <div>
       
           {/*<Mainpage/>*/}
+          <ListItem>
           <Chip
                     avatar={
                       <Avatar src="https://source.unsplash.com/random"/>
                     }
                     label={this.props.label.name||this.props.label}
                     />
+          </ListItem>
 
 
               
